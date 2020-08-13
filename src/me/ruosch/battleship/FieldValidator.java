@@ -3,6 +3,14 @@ package me.ruosch.battleship;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
+
+/*
+*
+*   Battleship field validator
+*   https://www.codewars.com/kata/52bb6539a4cf1b12d90005b7
+*
+* */
+
 public class FieldValidator {
 
     private static int[][] battleField1 = {
