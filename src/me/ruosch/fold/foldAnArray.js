@@ -19,11 +19,12 @@ function foldArray(array, runs) {
         }
 
         calculatedArray = result;
+        console.log(result)
     }
 
     return calculatedArray;
 }
 
 
-let input = [1, 2, 3, 4, 5];
+let input = [1, 2, 3, 4, 5]; // -> 15
 foldArray(input, 3);
