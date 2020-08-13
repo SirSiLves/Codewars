@@ -13,13 +13,12 @@ function foldArray(array, runs) {
 
             result.push(firstPosition + lastPosition)
         }
-
+        //add uneven number
         if ((calculatedArray.length / 2) % 1 !== 0) {
             result.push(calculatedArray[x])
         }
 
         calculatedArray = result;
-        console.log(result)
     }
 
     return calculatedArray;
@@ -28,3 +27,9 @@ function foldArray(array, runs) {
 
 let input = [1, 2, 3, 4, 5]; // -> 15
 foldArray(input, 3);
+
+
+
+function foldArray2(a, n) {
+    return n ? foldArray(a.map((x, i) => i + 1 <= a.length / 2 ? x + a[a.length - 1 - i] : x).slice(0, Math.ceil(a.length / 2)), n - 1) : a;
+}
