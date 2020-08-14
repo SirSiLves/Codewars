@@ -1,4 +1,4 @@
-package me.ruosch.battleship;
+package me.ruosch.kyu3;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -11,7 +11,7 @@ import java.lang.reflect.Method;
 *
 * */
 
-public class FieldValidator {
+public class BattleShip {
 
     private static int[][] battleField1 = {
             {1, 0, 0, 0, 0, 1, 1, 0, 0, 0},
@@ -56,7 +56,7 @@ public class FieldValidator {
         // write your code here
         Object testVariable = battleField1;
         try {
-            Class c = Class.forName("me.ruosch.battleship.FieldValidator");
+            Class c = Class.forName("me.ruosch.kyu3.BattleShip");
 
             for (Method m : c.getDeclaredMethods()) {
                 if (m.getName().equals("fieldValidator")) System.out.println(m.invoke(null, testVariable));
