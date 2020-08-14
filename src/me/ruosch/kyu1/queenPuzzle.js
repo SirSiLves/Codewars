@@ -5,3 +5,7 @@ function solveNQueens(n, fixedQueen)
 
 
 
+
+
+
+
