@@ -19,13 +19,9 @@ function findOdd(A) {
 
     for (let i = 0; i < A.length; i++) {
 
-        if (A.length > 1 && A[i] === A[i + 1]) {
-            count++;
-        } else {
+        if (A.length > 1 && A[i] === A[i + 1]) count++; else {
 
-            if (countArray.length === 0) {
-                countArray.push([[A[i], count]]);
-            } else {
+            if (countArray.length === 0) countArray.push([[A[i], count]]); else {
 
                 for (let j = 0; j < countArray.length; j++) {
 
@@ -34,12 +30,9 @@ function findOdd(A) {
                         reset = true;
                         break;
                     }
-
                 }
 
-                if (!reset) {
-                    countArray.push([[A[i], count]])
-                }
+                if (!reset) countArray.push([[A[i], count]])
             }
 
             count = 1;
