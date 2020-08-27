@@ -1,3 +1,12 @@
+
+/*
+*
+*   Fold an array
+*   https://www.codewars.com/kata/57ea70aa5500adfe8a000110
+*
+* */
+
+
 function foldArray(array, runs) {
 
     let calculatedArray = array;
