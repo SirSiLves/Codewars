@@ -74,9 +74,6 @@ public class PlayingCards {
      */
     public String decode(String[] deck) {
 
-        BigInteger n2 = new BigInteger("" + sortedDeck.length);
-        System.out.println(n2);
-
         long n = sortedDeck.length;
         long permutationValue = findLexicographicalPosition(deck, n - 1);
 
