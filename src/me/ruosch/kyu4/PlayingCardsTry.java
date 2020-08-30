@@ -9,7 +9,9 @@ package me.ruosch.kyu4;
  * */
 
 
-public class PlayingCards {
+import java.math.BigInteger;
+
+public class PlayingCardsTry {
 
     public static String[] numeralSystem = {
             "_", "A", "B", "C", "D", "E", "F", "G", "H",
@@ -48,9 +50,9 @@ public class PlayingCards {
 
     public static void main(String[] args) {
 
-        PlayingCards playingCards = new PlayingCards();
+        PlayingCardsTry playingCardsTry = new PlayingCardsTry();
 //        System.out.println(Arrays.toString(playingCards.encode("ATTACK TONIGHT ON CODEWARS"))); // --> attackTonightMessage
-        System.out.print(playingCards.decode(attackTonightMessage)); // --> ATTACK APPROVED
+        System.out.print(playingCardsTry.decode(attackTonightMessage)); // --> ATTACK APPROVED
 
     }
 
@@ -68,6 +70,9 @@ public class PlayingCards {
      * the message that is hidden inside, or null if the deck is invalid.
      */
     public String decode(String[] deck) {
+
+        BigInteger n2 = new BigInteger("" + sortedDeck.length);
+        System.out.println(n2);
 
         long n = sortedDeck.length;
         long permutationValue = findLexicographicalPosition(deck, n - 1);
