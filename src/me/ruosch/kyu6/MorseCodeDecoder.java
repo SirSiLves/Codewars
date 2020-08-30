@@ -3,6 +3,15 @@ package me.ruosch.kyu6;
 import java.util.Arrays;
 import java.util.stream.Collectors;
 
+
+/*
+ *
+ *   Decode the Morse code
+ *   https://www.codewars.com/kata/54b724efac3d5402db00065e/java
+ *
+ * */
+
+
 public class MorseCodeDecoder {
 
 
@@ -35,13 +44,14 @@ public class MorseCodeDecoder {
     }
 
 
-    public static String decode2(String morseCode) {
-        return Arrays.stream(morseCode.trim().split("   "))
-                .map(MorseCodeDecoder::decodeWord)
-                .collect(Collectors.joining(" "));
-    }
+//    public static String decode2(String morseCode) {
+//        return Arrays.stream(morseCode.trim().split("   "))
+//                .map(MorseCodeDecoder::decodeWord)
+//                .collect(Collectors.joining(" "));
+//    }
+//
+//    private static String decodeWord(String word) {
+//        return Arrays.stream(word.split(" ")).map(MorseCode::get).collect(Collectors.joining());
+//    }
 
-    private static String decodeWord(String word) {
-        return Arrays.stream(word.split(" ")).map(MorseCode::get).collect(Collectors.joining());
-    }
 }
